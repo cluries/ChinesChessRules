@@ -605,6 +605,7 @@ int rule_can_move_to(piece_name_t piecename, piece_location_t* current,piece_t* 
         for (i = 0; i < locations->count; i++) {
             if (locations->locations[i].row == target->row && locations->locations[i].col == target->col) {
                 ret = 1;
+                break ;
             }
         }
     }
